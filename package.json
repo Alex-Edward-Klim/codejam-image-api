@@ -1,0 +1,26 @@
+{
+  "name": "codejam-image-api",
+  "version": "1.0.0",
+  "description": "codejam",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint" : "./node_modules/.bin/eslint script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rolling-scopes-school/alex-edward-klim-RS2019Q3/tree/codejam-image-api"
+  },
+  "keywords": [
+    "codejam",
+    "image",
+    "api"
+  ],
+  "author": "Alex Klim",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}

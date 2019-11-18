@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CodeJam Image API</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="header">
+    <img class="header__menu-image" src="./assets/images/Shape.svg" alt="menu image">
+    <h1 class="header__heading">CodeJam - Image API</h1>
+    <img class="header__menu-right-image" src="./assets/images/Shape-Right.svg" alt="menu right image">
+    <nav class="navigation-bar"></nav>
+  </header>
+
+  <main class="main-content">
+
+      <section class="tools">
+        <div class="tools__main-tools">
+          <button class="tools__button main-tools-button fill-bucket-button"><img class="tools__button-img" src="./assets/images/Vector.svg" alt="Fill bucket">Fill bucket</button>
+          <button class="tools__button main-tools-button choose-color-button"><img class="tools__button-img" src="./assets/images/Vector2.svg" alt="Choose color">Choose color</button>
+          <button class="tools__button main-tools-button pencil-button"><img class="tools__button-img" src="./assets/images/Vector3.svg" alt="Pencil">Pencil</button>
+          <button class="tools__button main-tools-button button-inactive"><img class="tools__button-img" src="./assets/images/Vector4.svg" alt="Transform">Transform</button>
+        </div>
+        <div class="tools__color-tools">
+          <input class="color-input" type="color">
+          <button class="tools__button current-color-button"><div class="tools__button-color-circle current-color"></div>Current color</button>
+          <button class="tools__button previous-color-button"><div class="tools__button-color-circle previous-color"></div>Prev color</button>
+          <button class="tools__button red-color-button"><div class="tools__button-color-circle background-red"></div>red</button>
+          <button class="tools__button blue-color-button"><div class="tools__button-color-circle background-blue"></div>blue</button>
+        </div>
+      </section>
+
+      <section class="canvas-section">
+        <div class="canvas-buttons">
+          <button class="canvas-buttons__button canvas-buttons__load-button">Load</button>
+          <input class="canvas-buttons__input" type="text" placeholder="Enter City">
+          <button class="canvas-buttons__button canvas-buttons__black-and-white-button">B&W</button>
+        </div>
+        <canvas class="canvas" height="512" width="512">Your browser doesn't support canvas!</canvas>
+        <div class="canvas-matrix-size-buttons">
+          <button class="canvas-matrix-size-buttons__button canvas-matrix-size-buttons__128x128">128x128</button>
+          <button class="canvas-matrix-size-buttons__button canvas-matrix-size-buttons__256x256">256x256</button>
+          <button class="canvas-matrix-size-buttons__button canvas-matrix-size-buttons__512x512">512x512</button>
+        </div>
+      </section>
+
+  </main>
+
+  <div class="warning invisible">
+    <div class="warning__black-and-white">
+      <p class="warning__text">WARNING</p>
+      <button class="warning__button">OK</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
